@@ -8,8 +8,6 @@ excel_src = xlrd.open_workbook(excel_src_parh)
 sheet_src = excel_src.sheet_by_name('源数据')
 # sheet_src = excel_src.sheets()[0] #打开第一个表
 
-# print(sheet_src.cell_value(1, 2))
-
 new_data = []
 new_data.append([
     sheet_src.cell_value(0, 0),
